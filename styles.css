@@ -137,5 +137,14 @@ li {
 
     #imagem_perfil_instagram img {
         max-width: 80%; /* Reduz o tamanho da imagem para 80% da largura do contêiner pai em telas menores que 600px */
+        padding-top: 30px;
+    }
+
+    ul {
+        list-style-type: disc;
+        margin-left: 20px;
+        font-size: 25px;
+        width: 332px;
+        color: #fff;
     }
 }

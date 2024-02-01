@@ -89,10 +89,32 @@ button:hover {
 
 #imagem {
     flex: 1; /* Ocupa todo o espaço disponível */
+    max-width: 100% !important;
 }
 
 #livre_h1 {
     font-size: 60px;
     font-weight: 900;
     padding: 30px 0px 30px 0px;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Estilos específicos para telas menores que 600px de largura (exemplo: celulares) */
+    #conteudo {
+        flex-direction: column; /* Empilha os elementos verticalmente */
+        text-align: center; /* Centraliza o texto */
+        margin: auto !important;
+    }
+
+    #texto, #imagem, #botao {
+        margin-bottom: 20px; /* Adiciona espaço entre os elementos */
+        padding-right: 0 !important; /* Adiciona um espaço entre o texto e a imagem */
+    }
+    #imagemBotao img {
+        max-width: 80%; /* Reduz o tamanho da imagem para 80% da largura do contêiner pai em telas menores que 600px */
+    }
+
+    #imagem img {
+        max-width: 80%; /* Reduz o tamanho da imagem para 80% da largura do contêiner pai em telas menores que 600px */
+    }
 }
